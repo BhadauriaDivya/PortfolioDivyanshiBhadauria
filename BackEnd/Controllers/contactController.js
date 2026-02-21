@@ -19,7 +19,6 @@ exports.sendContactMessage = async (req, res) => {
     pass: process.env.EMAIL_PASS,
   },
 });
-    });
 
     const mailOptions = {
       from: email, // sender (user who filled form)
