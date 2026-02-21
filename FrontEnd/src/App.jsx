@@ -29,7 +29,7 @@ function App() {
           }
         />
         <Route path="/about" element={<AboutMePage />} />
-        <Route path="/contact" element={<ContactUsPage />} />
+        <Route path="/contactUs" element={<ContactUsPage />} />
       </Routes>
       <CallToAction/>
       <Footer />
