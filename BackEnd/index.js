@@ -1,23 +1,25 @@
 const express = require("express");
 const app = express();
 
+const cors = require("cors");
+app.use(
+  cors({
+    origin: frontendURL,
+  })
+);
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const mongoose = require("mongoose");
 
 require("dotenv").config();
-const cors = require("cors");
 const port = process.env.PORT;
 const frontendURL = process.env.FRONTEND_URL;
 
 const MONGO_URI = process.env.MONGO_URI;
 
-app.use(
-  cors({
-    origin: frontendURL,
-  })
-);
+
 app.use('/uploads', express.static('uploads'));
 app.use(require('./Routes/route'));
 mongoose.connect(MONGO_URI)
