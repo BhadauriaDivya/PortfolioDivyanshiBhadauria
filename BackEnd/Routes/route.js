@@ -2,10 +2,10 @@ const express = require("express");
 const router = express.Router();
 
 // ===== Import Controllers =====
-const {getProjects, getProjectById, createProject, updateProject, deleteProject} = require("../controllers/projectController");
-const { sendContactMessage, getAllMessages, deleteMessage} = require("../controllers/contactController");
-const { getSkills, createSkill, updateSkill, deleteSkill} = require("../controllers/skillController");
-const { getAbout,createAbout , updateAbout} = require("../controllers/aboutController");
+const {getProjects, getProjectById, createProject, updateProject, deleteProject} = require("../Controllers/projectController");
+const { sendContactMessage, getAllMessages, deleteMessage} = require("../Controllers/contactController");
+const { getSkills, createSkill, updateSkill, deleteSkill} = require("../Controllers/skillController");
+const { getAbout,createAbout , updateAbout} = require("../Controllers/aboutController");
 const { recordClick, getStats} = require("../Controllers/resumeController");
 
 
