@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 
 // ===== Import Controllers =====
-const { getHome} = require("../controllers/homeController");
 const {getProjects, getProjectById, createProject, updateProject, deleteProject} = require("../controllers/projectController");
 const { sendContactMessage, getAllMessages, deleteMessage} = require("../controllers/contactController");
 const { getSkills, createSkill, updateSkill, deleteSkill} = require("../controllers/skillController");
@@ -11,9 +10,6 @@ const { recordClick, getStats} = require("../Controllers/resumeController");
 
 
 // ===== Routes =====
-
-// Basic
-router.get("/", getHome);
 
 // Projects
 router.get("/projects", getProjects);
