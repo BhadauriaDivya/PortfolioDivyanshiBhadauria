@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./ProjectCard.css";
-import { BACKEND_URL } from "../../config";
+import { VITE_BACKEND_URL } from "../../config";
 
 const ProjectCard = ({ project }) => {
   const { id, title, description, techStack, images } = project;
@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
 
       {/* Project Image */}
       <div className="project-image">
-        {firstImage && <img src={`${BACKEND_URL}${firstImage}`} alt={title} />}
+        {firstImage && <img src={`${VITE_BACKEND_URL}${firstImage}`} alt={title} />}
       </div>
 
 {/* View Details Link */}
