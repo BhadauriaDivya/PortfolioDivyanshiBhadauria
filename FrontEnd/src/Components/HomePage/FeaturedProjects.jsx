@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; // import Link
 import './FeaturedProjects.css';
 import { getProjects } from "../../Api/apiCalls";
-import { BACKEND_URL } from "../../config";
+import { VITE_BACKEND_URL } from "../../config";
 
 const FeaturedProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -43,7 +43,7 @@ const FeaturedProjects = () => {
               >
                 <div className="project-image">
                   <img
-                    src={`${BACKEND_URL}${project.images && project.images.length > 0 ? project.images[0] : "/uploads/default.png"}`}
+                    src={`${VITE_BACKEND_URL}${project.images && project.images.length > 0 ? project.images[0] : "/uploads/default.png"}`}
                     alt={project.title}
                   />
                 </div>
