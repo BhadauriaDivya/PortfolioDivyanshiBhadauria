@@ -40,7 +40,7 @@ const Footer = () => {
             <a href="/projects">Projects</a>
             <a href="/skill">Skills</a>
             <a href="/about">About</a>
-            <a href="/contact">Contact</a>
+            <a href="/contactUs">Contact</a>
           </div>
           {/* <p className="thank-you">Thank you for visiting!</p> */}
         </div>
