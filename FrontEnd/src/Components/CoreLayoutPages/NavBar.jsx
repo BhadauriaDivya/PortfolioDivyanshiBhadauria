@@ -34,7 +34,7 @@ const NavBar = () => {
         </ul>
 
         {/* Button */}
-        <Link to="/contact" className="btn-primary" onClick={closeMenu}>
+        <Link to="/contactUs" className="btn-primary" onClick={closeMenu}>
           Get In Touch
         </Link>
       </div>
