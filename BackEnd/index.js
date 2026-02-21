@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 
+const frontendURL = process.env.FRONTEND_URL;
 const cors = require("cors");
 app.use(
   cors({
@@ -15,7 +16,6 @@ const mongoose = require("mongoose");
 
 require("dotenv").config();
 const port = process.env.PORT;
-const frontendURL = process.env.FRONTEND_URL;
 
 const MONGO_URI = process.env.MONGO_URI;
 
