@@ -54,7 +54,7 @@
     font-size: 14px;
   }
   
-  .btn-primary {
+  .btn-primary-submit {
     background-color: #800020;
     color: #fff;
     padding: 12px 24px;
@@ -64,7 +64,7 @@
     transition: 0.3s ease;
   }
   
-  .btn-primary:hover {
+  .btn-primary-submit:hover {
     background-color: #5C1A1B;
   }
   
