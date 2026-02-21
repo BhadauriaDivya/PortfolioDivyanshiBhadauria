@@ -30,7 +30,7 @@ const NavBar = () => {
           <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
           <li><Link to="/about" onClick={closeMenu}>About</Link></li>
           <li><Link to="/skill" onClick={closeMenu}>Skills</Link></li>  
-          <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+          <li><Link to="/contactUs" onClick={closeMenu}>Contact</Link></li>
         </ul>
 
         {/* Button */}
