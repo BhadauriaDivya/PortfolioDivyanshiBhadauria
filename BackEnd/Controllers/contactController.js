@@ -10,16 +10,15 @@ exports.sendContactMessage = async (req, res) => {
     const newMessage = await Contact.create({ name, email, subject, message });
 
     // 2️⃣ Send Email Notification
-      const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: false, // important
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
-
+    
+    const transporter = nodemailer.createTransport({
+      service: "gmail", // you can use other providers
+      auth: {
+        user: process.env.EMAIL_USER, // your email
+        pass: process.env.EMAIL_PASS, // your email app password
+      },
+    });
+    
     const mailOptions = {
       from: email, // sender (user who filled form)
       to: process.env.EMAIL_USER, // your email to receive messages
