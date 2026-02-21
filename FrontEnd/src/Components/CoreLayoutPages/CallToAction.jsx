@@ -1,5 +1,6 @@
 import React from 'react';
 import './CallToAction.css';
+import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   return (
@@ -13,8 +14,8 @@ const CallToAction = () => {
           Let’s create something elegant, responsive, and timeless together.
         </p>
         <div className="cta-buttons fade-in delay-2">
-          <a href="/contactUs" className="btn-primary-x">Get in Touch</a>
-          <a href="/projects" className="btn-secondary">View My Work</a>
+          <Link href="/contactUs" className="btn-primary-x">Get in Touch</Link>
+          <Link href="/projects" className="btn-secondary">View My Work</Link>
         </div>
       </div>
     </section>
