@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+    background: #FDF8F6;
+    color: #2C2C2C;
+    font-family: 'Inter', sans-serif;
+  }
+
+/* 
+  .nav-link:hover {
+    color: #800020;
+  }
+  .btn-primary {
+    background: #800020;
+    color: #FFFFFF;
+    padding: 12px 28px;
+    border-radius: 10px; 
+    transition: 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: #5C1A1B;
+  }
+
+  .btn-outline {
+    border: 2px solid #800020;
+    color: #800020;
+    background: transparent;
+    border-radius: 10px;
+  }
+  
+  .btn-outline:hover {
+    background: #800020;
+    color: #FFFFFF;
+  }
+  .card {
+    background: #FFFFFF;
+    border: 1px solid #EADAD5;
+    border-radius: 16px;
+    padding: 24px;
+    transition: 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(128, 0, 32, 0.08);
+  }
+  .section-alt {
+    background: #F5E6E0;
+    padding: 80px 0;
+  }
+  h1, h2 {
+    color: #2C2C2C;
+  }
+  .highlight {
+    color: #800020;
+  }
+  input:focus, textarea:focus {
+    border: 1px solid #800020;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(128, 0, 32, 0.1);
+  }
+  a {
+    color: #800020;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #5C1A1B;
+  }
+  .badge {
+    background: #F5E6E0;
+    color: #800020;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 14px;
+  }
+  .hero-line {
+    width: 60px;
+    height: 3px;
+    background: #800020;
+  } */

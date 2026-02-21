@@ -1,0 +1,138 @@
+/* ===== Root Colors ===== */
+:root {
+  --bg-main: #FDF8F6;
+  --bg-alt: #F5E6E0;
+  --accent: #800020;
+  --accent-dark: #5C1A1B;
+  --text-primary: #2C2C2C;
+  --text-light: #6B4F4F;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: rgba(253, 248, 246, 0.95);
+  border-bottom: 1px solid rgba(128, 0, 32, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 13px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+}
+.logoname {
+  text-decoration: none;
+  color: var(--accent-dark);
+}
+.logo span {
+  color: var(--accent);
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Underline hover animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Button */
+.btn-primary {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-dark);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--accent-dark);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: var(--bg-main);
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    gap: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-links.active {
+    max-height: 500px; /* enough to show all items */
+  }
+
+  .nav-links li {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .btn-primary {
+    display: none; /* hide button in small screens */
+  }
+}

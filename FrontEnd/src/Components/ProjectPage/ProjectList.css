@@ -1,0 +1,50 @@
+.project-list-section {
+    padding: 50px 10%;
+    background-color: #FDF8F6; /* Soft beige background */
+    color: #2C2C2C;
+    text-align: center;
+}
+
+.project-list-wrapper {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.project-list-heading {
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    color: #800020; /* Burgundy Accent */
+    margin-bottom: 20px;
+}
+
+.project-list-subtext {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    color: #6B4F4F;
+    margin-bottom: 60px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+}
+
+.fade-in.delay-1 {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

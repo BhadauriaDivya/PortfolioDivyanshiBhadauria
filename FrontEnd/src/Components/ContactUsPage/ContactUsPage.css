@@ -1,0 +1,97 @@
+.contact-page {
+    padding: 80px 10%;
+    background-color: #FDF8F6;
+    color: #2C2C2C;
+    text-align: center;
+  }
+  
+  .contact-title {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    color: #800020;
+    margin-bottom: 10px;
+  }
+  
+  .contact-subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    color: #6B4F4F;
+    margin-bottom: 50px;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  /* Form Styles */
+  .contact-form {
+    max-width: 650px;
+    width: 100%;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #800020;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d3bfc1;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+  }
+  
+  .btn-primary {
+    background-color: #800020;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #5C1A1B;
+  }
+  
+  .message-alert {
+    margin-top: 15px;
+    font-family: "Inter", sans-serif;
+    color: #6B4F4F;
+    font-weight: 500;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    max-width: 300px;
+  }
+  
+  .contact-info h3 {
+    font-family: "Playfair Display", serif;
+    color: #800020;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2C2C2C;
+  }

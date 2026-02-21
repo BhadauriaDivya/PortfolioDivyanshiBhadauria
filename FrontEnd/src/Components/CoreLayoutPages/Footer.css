@@ -1,0 +1,177 @@
+/* Use your main color system */
+.section-alt { 
+  background-color: #eadcd5;
+  position: relative; /* Needed for absolute positioning inside */
+  overflow: hidden;
+}
+
+/* Top-right decorative circle */
+.footer::before {
+  content: "";
+  position: absolute;
+  bottom: -150px;      /* Adjust vertical position */
+  right: -150px;    /* Adjust horizontal position */
+  width: 500px;    /* Circle size */
+  height: 370px;
+  background: rgba(128, 0, 32, 0.1); /* Accent color with transparency */
+  border-radius: 50%;
+  z-index: 0;      /* Behind footer content */
+}
+
+/* Footer container should stay above the circle */
+.footer-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  position: relative; /* Keep content above circle */
+  z-index: 1;
+}
+
+.footer {
+  padding: 60px 40px 20px 40px;
+  bottom: 0;
+  position: relative;
+}
+  
+  /* ===== Left Side ===== */
+  
+  .footer-left h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #800020;
+    margin-bottom: 18px;
+  }
+  
+  .footer-left h2 span {
+    color: #800020; /* Accent only */
+  }
+  
+  .footer-left p {
+    font-family: "Inter", sans-serif;
+    color: #6B4F4F;
+    max-width: 300px;
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  
+  /* ===== Right Side Links ===== */
+  
+  .footer-right {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: auto;
+    
+  }
+  
+  .footer-right a {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: #8b0a0a;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  /* Subtle underline accent */
+  .footer-right a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 1.5px;
+    background-color: #800020;
+    transition: width 0.3s ease;
+  }
+  
+  .footer-right a:hover {
+    color: #2C2C2C;
+  }
+  
+  .footer-right a:hover::after {
+    width: 100%;
+  }
+  
+  /* ===== Bottom ===== */
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 20px;
+    border-top: 1px solid #963357;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    color: #6B4F4F;
+    letter-spacing: 0.5px;
+  }
+  /* ===== Social Icons ===== */
+
+.footer-socials {
+    margin-top: 30px;
+    display: flex;
+    gap: 18px;
+  }
+  
+  .footer-socials a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #FDF8F6;
+    border: 1px solid #e6d5cf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #800020;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .footer-socials a:hover {
+    background-color: #800020;
+    color: #ffffff;
+    border-color: #800020;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(128, 0, 32, 0.25);
+  }
+  /* Thank you message below right links */
+.footer-right-section .thank-you {
+  margin-bottom: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  text-align: end;
+  color: #6B4F4F;
+  letter-spacing: 0.5px;
+}
+/* Footer inner container */
+.footer-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-end;  */
+  gap: 60px;
+}
+
+/* Footer Right Section */
+.footer-right-section {
+  display: flex;
+  flex-direction: column; /* stack thank-you + links */
+  align-items: flex-end;  /* align items to right */
+  justify-content: flex-end; /* bottom alignment inside section */
+  gap: 10px; /* spacing between thank-you text and links */
+}
+/* Footer.css */
+.freelance-note {
+  font-family: "Inter", sans-serif;
+  color: #800020;
+  font-weight: 600;
+  /* width: 50%; */
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}

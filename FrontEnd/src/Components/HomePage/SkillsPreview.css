@@ -1,0 +1,71 @@
+.skills-section {
+    padding: 100px 10%;
+    background-color: #FDF8F6; /* Soft beige */
+    color: #2C2C2C;
+    text-align: center;
+  }
+  
+  .skills-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .skills-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #800020; /* Burgundy Accent */
+    margin-bottom: 20px;
+  }
+  
+  .skills-subtext {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: #6B4F4F;
+    margin-bottom: 60px;
+  }
+  
+  /* Badge grid */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual badge */
+  .skill-badge {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5E6E0; /* Soft beige */
+    color: #800020; /* Burgundy text */
+    border: 2px solid #800020;
+    padding: 12px 20px;
+    border-radius: 50px; /* pill shape */
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: default;
+  }
+  
+  .skill-badge:hover {
+    background-color: #800020;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in.delay-1 {
+    animation-delay: 0.3s;
+  }

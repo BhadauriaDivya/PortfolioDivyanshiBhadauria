@@ -1,0 +1,115 @@
+.project-card {
+    background-color: #FDF8F6; /* Soft beige */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    overflow: hidden;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  }
+  
+  /* Featured badge */
+  .featured-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #800020; /* Burgundy */
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  
+  /* Image */
+  .project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Content */
+  .project-content {
+    padding: 10px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .project-title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    color: #800020;
+  }
+  
+
+  /* Tech stack */
+  .project-techstack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .tech-item {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    background-color: #F5E6E0; /* Light beige */
+    color: #800020;
+    border-radius: 6px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* Links */
+  .project-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  
+  .project-links a {
+    font-family: "Inter", sans-serif;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #800020;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease;
+  }
+  
+  .project-links a:hover {
+    color: #5C1A1B; /* Darker burgundy */
+  }
+  
+  /* Fade-in animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .view-details {
+    display: inline-block;
+    margin-top: 14px;
+    bottom: 0px;
+    color: #800020; /* Burgundy */
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  .view-details:hover {
+    color: #5C1A1B; /* Darker burgundy */
+  }
