@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import "./ProjectDetails.css";
 import TechStackList from "./TechStackList";
 import { getProjectById } from "../../Api/apiCalls";
-import { BACKEND_URL } from "../../config";
+import { VITE_BACKEND_URL } from "../../config";
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -48,7 +48,7 @@ const ProjectDetails = () => {
         <div className="project-gallery">
           {images.map((img, idx) => (
             <div key={idx} className="gallery-item">
-              <img src={`${BACKEND_URL}${img}`} alt={`${title} ${idx + 1}`} />
+              <img src={`${VITE_BACKEND_URL}${img}`} alt={`${title} ${idx + 1}`} />
             </div>
           ))}
         </div>
