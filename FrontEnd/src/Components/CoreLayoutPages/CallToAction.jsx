@@ -14,8 +14,8 @@ const CallToAction = () => {
           Let’s create something elegant, responsive, and timeless together.
         </p>
         <div className="cta-buttons fade-in delay-2">
-          <Link href="/contactUs" className="btn-primary-x">Get in Touch</Link>
-          <Link href="/projects" className="btn-secondary">View My Work</Link>
+          <Link to="/contactUs" className="btn-primary-x">Get in Touch</Link>
+          <Link to="/projects" className="btn-secondary">View My Work</Link>
         </div>
       </div>
     </section>
