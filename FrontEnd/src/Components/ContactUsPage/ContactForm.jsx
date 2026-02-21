@@ -70,7 +70,7 @@ const ContactForm = () => {
         />
       </div>
 
-      <button type="submit" className="btn-primary" disabled={loading}>
+      <button type="submit" className="btn-primary-submit" disabled={loading}>
         {loading ? "Sending..." : "Send Message"}
       </button>
 
