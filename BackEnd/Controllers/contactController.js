@@ -10,7 +10,6 @@ exports.sendContactMessage = async (req, res) => {
     const newMessage = await Contact.create({ name, email, subject, message });
 
     // 2️⃣ Send Email Notification
-    const transporter = nodemailer.createTransport({
       const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
