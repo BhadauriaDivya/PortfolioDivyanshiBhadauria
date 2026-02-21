@@ -1,4 +1,5 @@
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -12,8 +13,8 @@ const Footer = () => {
             Open for freelance projects – let’s build something amazing together!
           </p>
 
-
           <div className="footer-socials">
+            {/* External links should still use <a> */}
             <a
               href="https://www.linkedin.com/in/divyanshi-bhadauria/"
               target="_blank"
@@ -36,13 +37,13 @@ const Footer = () => {
 
         <div className="footer-right-section">
           <div className="footer-right">
-            <a href="/">Home</a>
-            <a href="/projects">Projects</a>
-            <a href="/skill">Skills</a>
-            <a href="/about">About</a>
-            <a href="/contactUs">Contact</a>
+            {/* Internal navigation should use <Link> */}
+            <Link to="/">Home</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/skill">Skills</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contactUs">Contact</Link>
           </div>
-          {/* <p className="thank-you">Thank you for visiting!</p> */}
         </div>
 
       </div>
